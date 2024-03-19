@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  background: #F3F5FC;
+}
+
+body{
+  width: 100%;
+  background: #F3F5FC;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+/*Encabezado*/
+header{
+  width: 100%;
+  height: 80px;
+  padding: 2px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.logo{
+  width: 100%;
+}
+
+/*Bloque 1 donde se encuentra el area de texto para encriptar y desencriptar.
+Mensaje de alerta. Cuenta con los botones.*/
+.encriptador{
+  width: 60%;
+  height: 500px;
+  margin: 0;
+  padding: 2px;
+  gap: 2px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: start;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.areaTexto{
+  width: 100%;
+  height: 400px;
+  margin-left: 65px;
+  margin-top: 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  outline: none;
+  border-color: none;
+  border: none;
+}
+
+.areaTexto::placeholder{
+  color: #0A3871;
+  font-size: 24px;
+  text-align: justify;
+}
+
+textarea:focus {
+  border-color: none;
+}
+
+.alerta{
+  display: flex;
+  position: absolute;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  margin-top: 450px;
+  margin-left: 260px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.fa-solid{
+  margin-right: 5px;
+}
+
+h5{
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.botones{
+  display: block;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  margin-top: 500px;
+  margin-left: 400px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.btn-encriptar{
+  width: 200px;
+  height: 50px;
+  border-radius: 32px;
+  border-color: none;
+  border: none;
+  background: #0A3871;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.btn-desencriptar{
+  width: 200px;
+  height: 50px;
+  border-radius: 32px;
+  background: #D8DFE8;
+  color: #0A3871;
+  border-color: #0A3871;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  border-width: 1px;
+}
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover {
+    background: lightgrey;
+}
+
+.btn-encriptar:active,
+.btn-desencriptar:active {
+    transform: scale(1.5);
+}
+
+/*Rectangulo con imagen de muñeco, mensaje 1, mensaje 2.*/
+.rectangulo{
+  width: 30%;
+  height: 700px;
+  margin: 0;
+  padding: 2px;
+  gap: 2px;
+  display: block;
+  flex-direction: end;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  background: white;
+  margin-left: 700px;
+  border-radius: 28px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2,p{
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  background: none;
+  padding: 10px;
+  color: #343A40;
+}
+
+.muñeco{
+  width: 250px;
+  height: 250px;
+  margin: 25px;
+  margin-top: 70px;
+  justify-content: center;
+  background: none;
+}
+
+.exito-img, .encriptado-img{
+  width: 250px;
+  height: 250px;
+  margin-top: 70px;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+}
+
+.desencriptado-img, .btn-copiar {
+  display: none;
+}
+
+.btn-copiar{
+  width: 200px;
+  height: 50px;
+  border-radius: 18px;
+  border: 1px solid #0A3871;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px; 
+}
+.btn-copiar {
+  display: none;
+}
+
+
+h2{
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  background: none;
+  padding: 10px;
+  color: #343A40;
+  font-size: 32px; 
+  line-height: 1.2; 
+}
+
+.btn-clicked {
+    opacity: 0.5; 
+}

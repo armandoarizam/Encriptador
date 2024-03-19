@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b7a9c22442.js" crossorigin="anonymous"></script>
+    <title>Encriptador de Texto Challenge</title>
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <nav>
+            <img class="logo" src="./img/logo.png" alt="logo">
+        </nav>
+    </header>
+    
+    <!--Bloque 1 donde se encuentra el area de texto para encriptar y desencriptar.
+        Mensaje de alerta. Cuenta con los botones.-->
+    <div class="encriptador">
+        <div class="areaTexto">
+            <textarea class="areaTexto" name="areaTexto" id="" cols="30" rows="10" placeholder="Ingresa tu texto aqui"></textarea>
+        </div>
+        
+        <div class="alerta">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <h5>Solo letras minúsculas y sin acentos</h5>
+        </div>
+        
+        <div class="botones">
+            <input type="button" class="btn-encriptar" value="Encriptar">
+            <input type="button" class="btn-desencriptar" value="Desencriptar">
+        </div>
+    </div>
+    
+    <!--Rectangulo con imagen de muñeco, mensaje 1, mensaje 2. -->
+    <div class="rectangulo">
+        <img class="muñeco" src="./img/muñeco.png" alt="muñeco">
+        <h2 class="titulo">Ningún mensaje fue encontrado</h2>
+        <p class="texto-desencriptado">Ingresa el texto que desees encriptar o desencriptar.</p>
+        <img class="exito-img" src="./img/desencriptado.jpg" alt="Texto desencriptado con éxito">
+        <img class="encriptado-img" src="./img/encriptado.png" alt="Texto encriptado">
+        <input type="button" class="btn-copiar" value="Copiar">
+    </div>
+
+    
+    <script src="./script.js"></script>
+    
+    <!-- Copyright -->
+    <!-- Hecho por Armando Ariza -->
+</body>
+</html>
+
